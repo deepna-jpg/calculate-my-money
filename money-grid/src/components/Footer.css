@@ -1,36 +1,63 @@
+/**
+ * Footer Styles
+ * Footer 컴포넌트의 레이아웃, 여백, 텍스트 스타일을 정의합니다.
+ */
+/* 전체 푸터 영역 스타일: 상단 여백을 주고 구분선을 그립니다 */
 .footer {
     margin-top: 4rem;
+    /* 메인 콘텐츠와 푸터 사이의 간격 */
     padding: 2rem 0;
+    /* 푸터 내부의 상하 여백 */
     border-top: 1px solid var(--color-border);
+    /* 상단에 연한 회색 구분선 추가 */
     text-align: center;
+    /* 텍스트를 중앙 정렬 */
 }
 
+/* 푸터 내부 콘텐츠를 정렬하는 컨테이너 */
 .footer-content {
     display: flex;
     flex-direction: column;
+    /* 요소들을 세로로 배치 (저작권 문구 위, 링크 아래) */
     align-items: center;
+    /* 가로축 기준 중앙 정렬 */
     gap: 1rem;
+    /* 저작권 문구와 링크 사이의 간격 */
 }
 
+/* 저작권 텍스트 스타일 */
 .copyright {
     color: var(--color-text-sub);
+    /* 너무 눈에 띄지 않게 보조 텍스트 색상 사용 */
     font-size: 0.875rem;
+    /* 본문보다 약간 작은 글씨 크기 (14px) */
     margin: 0;
+    /* 기본 마진 제거 */
 }
 
+/* 소셜 링크들을 감싸는 영역 */
 .social-links {
     display: flex;
     gap: 1rem;
+    /* 링크들 사이의 간격 */
 }
 
+/* 개별 소셜 링크 스타일 */
 .social-link {
     color: var(--color-text-sub);
+    /* 기본 색상은 보조 텍스트 색 */
     text-decoration: none;
+    /* 밑줄 제거 */
     font-size: 0.875rem;
+    /* 글씨 크기 통일 */
     transition: color 0.2s ease;
+    /* 색상 변경 시 부드러운 전환 효과 */
 }
 
+/* 마우스를 올렸을 때(Hover) 스타일 */
 .social-link:hover {
     color: var(--color-primary);
+    /* 브랜드 메인 색상으로 변경 */
     text-decoration: underline;
+    /* 마우스 오버 시 밑줄 표시 */
 }
