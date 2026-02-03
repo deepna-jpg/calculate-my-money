@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import DataGrid from './components/DataGrid';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         {/* 우리가 만든 엑셀 입력판을 여기에 짠! 하고 보여줍니다 */}
         <DataGrid />
       </main>
+
+      <Footer />
     </div>
   );
 }
