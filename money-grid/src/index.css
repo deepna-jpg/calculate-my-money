@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Color Palette - Design System */
+  --color-primary: #2563EB; /* Trust Blue */
+  --color-primary-dark: #1E40AF;
+  --color-primary-light: #DBEAFE;
+  
+  --color-secondary: #059669; /* Growth Green */
+  --color-secondary-light: #D1FAE5;
+  
+  --color-alert: #DC2626; /* Alert Red */
+  --color-alert-light: #FEE2E2;
+
+  --color-background: #F8FAFC; /* Cool Gray BG */
+  --color-surface: #FFFFFF;
+  
+  --color-text-main: #0F172A;
+  --color-text-sub: #64748B;
+  --color-border: #E2E8F0;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'Roboto Mono', monospace; /* For numbers/financial data */
+
+  /* Spacing */
+  --spacing-unit: 4px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.text-mono {
+  font-family: var(--font-mono);
+}
+
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-alert { color: var(--color-alert); }
